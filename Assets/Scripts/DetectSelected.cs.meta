@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 52f5abf62f1b44f4ba5e02678cfa7a97
+timeCreated: 1483491051
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - camera: {instanceID: 0}
+  - selectedBlock: {fileID: 1000012171073538, guid: 132434ee3847af34a81c3fdccd9b2f49,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
