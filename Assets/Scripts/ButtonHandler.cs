@@ -10,8 +10,11 @@ public class ButtonHandler : MonoBehaviour {
 	void Start() {
 		emptyButton.onClick.AddListener(loadEmpty);
 		randomButton.onClick.AddListener(loadRandom);
+		Cursor.visible = true;
 	}
-
+	void OnLevelWasLoaded() {
+		Cursor.visible = true;
+	}
 	void loadEmpty() {
 		Application.LoadLevel("Empty");
 	}
