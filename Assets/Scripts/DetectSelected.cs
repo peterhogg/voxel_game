@@ -12,7 +12,7 @@ public class DetectSelected : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		RaycastHit hit;
-		Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+		Ray ray = this.camera.ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
 
 		if (Physics.Raycast(ray, out hit, 10.0f)) {
 			Transform objectHit = hit.transform;
