@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class DetectSelected : MonoBehaviour {
-	public Camera camera;
+	[SerializeField] Camera camera;
 	public GameObject selectedBlock;
 	// Use this for initialization
 	void Start () {
@@ -11,10 +11,8 @@ public class DetectSelected : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		RaycastHit hit;
 		Ray ray = this.camera.ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
-
-		if (Physics.Raycast(ray, out hit, 10.0f)) {
+		if (Physics.Raycast(ray, out RaycastHit hit, 10.0f)) {
 			Transform objectHit = hit.transform;
 			//Destroy block on right click
 			if (Input.GetMouseButtonDown (1)) {
